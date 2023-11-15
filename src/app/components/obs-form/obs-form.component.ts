@@ -1,5 +1,6 @@
+import { GenericService } from './../../services/generic.service';
 import { Component } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-obs-form',
@@ -7,8 +8,15 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./obs-form.component.css']
 })
 export class ObsFormComponent {
+public state: boolean = false;
 
-    public isChecked = new BehaviorSubject<boolean>(false);
+constructor(private genericService: GenericService){
+  this.genericService.changeCheckbox = this.state;
+}
 
+changeCheckboxState(){
+  this.state = !this.state;
+  this.genericService.changeCheckbox = this.state;
+}
 
 }

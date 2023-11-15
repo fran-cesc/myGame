@@ -13,6 +13,7 @@ import { ObsResultComponent } from './app/components/obs-result/obs-result.compo
 import { ColdObservablesPageComponent } from './app/pages/cold-observables-page/cold-observables-page.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],
