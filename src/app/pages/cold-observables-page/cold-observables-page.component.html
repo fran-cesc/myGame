@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<hr>
+<h1 class="text-center mt-4">Cold Observables Page</h1>
+<h3 class="text-center mb-4">Crida a la api d'Star Wars</h3>
+<hr>
+<p>El nº total de naus rebudes es de: {{(receivedData$ | async)?.count}}</p>
+<div *ngFor="let starship of (receivedData$ | async)?.results; index as i">
+  <p>nau <b>{{i+1}}</b> nom: <b>{{starship.name}}</b></p>
+</div>
+<!-- <div *ngFor="let starship of starshipList; index as i">
+  <p>{{starship.name}}</p>
+</div> -->
