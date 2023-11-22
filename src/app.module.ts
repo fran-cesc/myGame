@@ -13,7 +13,9 @@ import { ObsResultComponent } from './app/components/obs-result/obs-result.compo
 import { ColdObservablesPageComponent } from './app/pages/cold-observables-page/cold-observables-page.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './app/components/users/register/register.component';
+import { LoginComponent } from './app/components/users/login/login.component';
 
 
 @NgModule({
@@ -28,13 +30,16 @@ import { FormsModule } from '@angular/forms';
     ObsResultComponent,
     HotObservablesPageComponent,
     ColdObservablesPageComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

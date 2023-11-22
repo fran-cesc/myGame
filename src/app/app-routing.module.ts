@@ -5,6 +5,8 @@ import { OutputPageComponent } from './pages/output-page/output-page.component';
 import { HotObservablesPageComponent } from './pages/hot-observables-page/hot-observables-page.component';
 import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
 import { ColdObservablesPageComponent } from './pages/cold-observables-page/cold-observables-page.component';
+import { RegisterComponent } from './components/users/register/register.component';
+import { LoginComponent } from './components/users/login/login.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path: 'cold-observables-page',
     component: ColdObservablesPageComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: '**',
