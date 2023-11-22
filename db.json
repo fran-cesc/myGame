@@ -11,6 +11,12 @@
       "password": "$2a$10$f0Jb6vIfPeKjy2ONLqb1D.J33fmHETfU2rqrLm7eofSlyA0y7izLy",
       "username": "patata",
       "id": 2
+    },
+    {
+      "email": "joan@joan.com",
+      "password": "$2a$10$lkdmdc8ugEIKA6uyDZMFnuL7T.GmDyOIT77jC62oSN5oVNpLdeZnW",
+      "username": "joan",
+      "id": 3
     }
   ]
 }

@@ -1,21 +1,24 @@
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand m-3" href="#">myGame</a>
+    <a class="navbar-brand m-3">myGame</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
         <li class="nav-item m-3">
-          <a class="nav-link" href="#" routerLink="/output-page">&#64;Output_Page</a>
+          <a class="nav-link" [routerLink]="['/output-page']">&#64;Output_Page</a>
         </li>
         <li class="nav-item m-3">
-          <a class="nav-link" href="#" routerLink="/hot-observables-page">Hot Observables$</a>
+          <a class="nav-link" routerLink="/hot-observables-page">Hot Observables$</a>
         </li>
         <li class="nav-item m-3">
-          <a class="nav-link" href="#" routerLink="/cold-observables-page">Cold Observables$</a>
+          <a class="nav-link" routerLink="/cold-observables-page">Cold Observables$</a>
         </li>
         <li class="nav-item m-3">
-          <a class="nav-link" href="#" routerLink="/register">Register</a>
+          <a class="nav-link" routerLink="/register">Register</a>
         </li>
         <li class="nav-item m-3">
-          <a class="nav-link" href="#" routerLink="/login">Login</a>
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item m-3">
+          <a class="nav-link" href="#" (click)="logOut()">LogOut</a>
         </li>
       </ul>
     </div>

@@ -22,6 +22,7 @@ export class UsersService {
   }
 
   login(formValue: any){
+        // TODO -> Intentar amb observables (subscribe)
     return firstValueFrom(
       // TODO -> CANVIAR EL TIPUS ANY PER UNA INTERFÍCIE
       this.HttpClient.post<any>(`${this.baseUrl}/login`, formValue)

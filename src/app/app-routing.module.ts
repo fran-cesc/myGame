@@ -7,6 +7,7 @@ import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
 import { ColdObservablesPageComponent } from './pages/cold-observables-page/cold-observables-page.component';
 import { RegisterComponent } from './components/users/register/register.component';
 import { LoginComponent } from './components/users/login/login.component';
+import { loginGuard } from './guards/login.guard';
 
 const routes: Routes = [
   {
@@ -16,14 +17,18 @@ const routes: Routes = [
   {
     path: 'output-page',
     component: OutputPageComponent,
+    canActivate: [loginGuard]
   },
   {
     path: 'hot-observables-page',
     component: HotObservablesPageComponent,
+    canActivate: [loginGuard]
   },
   {
     path: 'cold-observables-page',
     component: ColdObservablesPageComponent,
+    canActivate: [loginGuard]
+
   },
   {
     path: 'register',
